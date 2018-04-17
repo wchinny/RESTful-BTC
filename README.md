@@ -26,7 +26,7 @@ Change the interval by editing the line below in server.js, with 120000ms being 
 setTimeout(refresh, 120000);
 ```
 
-## UNIX Time
+## UNIX Timestamps
 
 The timestamp is represented as the UNIX Epoch time by default. To convert to a human-readable format, here are a few routines to use
 
@@ -51,6 +51,12 @@ import time
 time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.gmtime(epoch))
 
 ```
+
+## Testing
+
+This program supports POST, PUT, GET, and DELETE HTTP requests. Testing can be done with Postman.
+
+* [Postman](https://www.getpostman.com)
 
 
 
