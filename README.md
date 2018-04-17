@@ -28,7 +28,31 @@ setTimeout(refresh, 120000);
 
 ## UNIX Time
 
-The timestamp is represented as the UNIX Epoch time by default. To convert to a human-readable format, here are some examples:
+The timestamp is represented as the UNIX Epoch time by default. To convert to a human-readable format, here are a few routines to use
+
+JavaScript:
+
+```
+var myDate = new Date( your epoch date *1000);
+document.write(myDate.toGMTString()+"<br>"+myDate.toLocaleString());
+
+``
+
+Ruby:
+
+```
+Time.at(epoch)
+```
+
+Python:
+
+```
+import time
+time.strftime("%a, %d %b %Y %H:%M:%S +0000", time.gmtime(epoch))
+
+```
+
+
 
 
 
