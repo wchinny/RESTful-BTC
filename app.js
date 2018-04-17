@@ -2,9 +2,7 @@ var express = require('express');
 var app = express();
 var db = require('./db');
 
-// var UserController = require('./user/UserController');
-var CoinController = require('./coin/CoinController');
+var CoinController = require('./coin/CoinREST');
 app.use('/coins', CoinController);
-// app.use('/users', UserController);
 
 module.exports = app;
