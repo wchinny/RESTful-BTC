@@ -36,7 +36,7 @@ JavaScript:
 var myDate = new Date( your epoch date *1000);
 document.write(myDate.toGMTString()+"<br>"+myDate.toLocaleString());
 
-``
+```
 
 Ruby:
 
