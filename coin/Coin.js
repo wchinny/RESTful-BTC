@@ -2,7 +2,8 @@ var mongoose = require('mongoose');
 var CoinSchema = new mongoose.Schema({  
   name: String,
   abbreviation: String,
-  price_usd: Number
+  price_usd: Number,
+  time: Number
 });
 mongoose.model('Coin', CoinSchema);
 

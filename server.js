@@ -16,11 +16,12 @@ function refresh()
 		Coin.create({
 			name: json[0].name,
 			abbreviation: json[0].symbol,
-			price_usd: json[0].price_usd
+			price_usd: json[0].price_usd,
+			time: json[0].last_updated
 		});
 	});
 
-    setTimeout(refresh, 600000);
+    setTimeout(refresh, 120000);
 }
 
 refresh();
