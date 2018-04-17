@@ -16,4 +16,22 @@ npm install mongoose
 npm install body-parser
 ```
 
+## How stuff works
+
+The program pulls data from the CoinMarketcap API BTC ticker in 120-second (2 minutes) intervals, and adds the value with a timestamp to a MongoDB database on MLab.
+
+Change the interval by editing the line below in server.js, with 120000ms being the default value:
+
+```
+setTimeout(refresh, 120000);
+```
+
+## UNIX Time
+
+The timestamp is represented as the UNIX Epoch time by default. To convert to a human-readable format, here are some examples:
+
+
+
+
+
 
