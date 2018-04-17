@@ -16,6 +16,14 @@ npm install mongoose
 npm install body-parser
 ```
 
+## How do I run the program?
+
+With all the prerequisites installed, run server.js in the terminal like so:
+
+```
+node server.js
+```
+
 ## How stuff works
 
 The program pulls data from the CoinMarketcap API BTC ticker in 120-second (2 minutes) intervals, and adds the value with a timestamp to a MongoDB database on MLab.
