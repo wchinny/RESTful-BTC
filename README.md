@@ -14,6 +14,7 @@ Express, Mongoose, and body-parser are required. Install them by running the fol
 npm install express
 npm install mongoose
 npm install body-parser
+npm install request
 ```
 
 ## How do I run the program?
